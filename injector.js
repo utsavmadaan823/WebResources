@@ -1,4 +1,6 @@
 // CONFIG
+// INJECTOR - https://cdn.jsdelivr.net/gh/utsavmadaan823/WebResources@2.0/injector.min.js
+// CONFIG.json - https://cdn.jsdelivr.net/gh/utsavmadaan823/WebResources@2.0/test.json
 const injectedFilesBaseDirectoryPath="https://cdn.jsdelivr.net/gh/utsavmadaan823/WebResources@2.0/";
 const domainName=(function getDomainName(hostName){
     return hostName.substring(hostName.lastIndexOf(".", hostName.lastIndexOf(".") - 1) + 1);

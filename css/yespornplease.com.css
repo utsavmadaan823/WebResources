@@ -1,0 +1,7 @@
+body{
+    padding-top: 25px!important;
+}
+
+.top-nav,.navbar,.footer-container,.footer{
+    display:none!important;
+}

@@ -1,1 +1,0 @@
-alert('Hi !!! I am from universal javascript');

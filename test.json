@@ -289,7 +289,7 @@
         "title":"WebView",
         "provider":"webview",
         "arguments":[
-          "https://sex.com"
+          "https://www.google.com"
         ]
       }
     ]
