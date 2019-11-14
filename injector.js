@@ -1,5 +1,5 @@
 // CONFIG
-const injectedFilesBaseDirectoryPath="https://cdn.jsdelivr.net/gh/utsavmadaan823/WebResources@1.5/";
+const injectedFilesBaseDirectoryPath="https://cdn.jsdelivr.net/gh/utsavmadaan823/WebResources@2.0/";
 const domainName=(function getDomainName(hostName){
     return hostName.substring(hostName.lastIndexOf(".", hostName.lastIndexOf(".") - 1) + 1);
 })(window.location.hostname);
@@ -27,7 +27,7 @@ function injectInDocument(injectType,inputStringOrUrl) {
 }
 
 function prepareFileUrl(injectType,fileName){
-	return injectedFilesBaseDirectoryPath+fileName+(injectType == INJECT_JAVASCRIPT ? ".min.js" : ".min.css");
+	return injectedFilesBaseDirectoryPath+(injectType == INJECT_JAVASCRIPT ? "js/" : "css/")+fileName+(injectType == INJECT_JAVASCRIPT ? ".min.js" : ".min.css");
 }
 
 // INJECTIONS-
