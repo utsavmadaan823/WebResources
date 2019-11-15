@@ -1,11 +1,8 @@
-// CONFIG
-// INJECTOR - https://cdn.jsdelivr.net/gh/utsavmadaan823/WebResources@2.1/injector.min.js
-// CONFIG.json - https://cdn.jsdelivr.net/gh/utsavmadaan823/WebResources@2.1/test.json
 const injectedFilesBaseDirectoryPath="https://cdn.jsdelivr.net/gh/utsavmadaan823/WebResources@2.1/";
+
 const domainName=(function getDomainName(hostName){
     return hostName.substring(hostName.lastIndexOf(".", hostName.lastIndexOf(".") - 1) + 1);
 })(window.location.hostname);
-
 const INJECT_JAVASCRIPT = "js";
 const INJECT_CSS = "css";
 
@@ -33,9 +30,9 @@ function prepareFileUrl(injectType,fileName){
 }
 
 // INJECTIONS-
-// universal injections
-injectInDocument(INJECT_CSS,prepareFileUrl(INJECT_CSS,"universal"));
-injectInDocument(INJECT_JAVASCRIPT,prepareFileUrl(INJECT_JAVASCRIPT,"universal"));
 // hostname (trimmed) based injections
 injectInDocument(INJECT_CSS,prepareFileUrl(INJECT_CSS,domainName));
 injectInDocument(INJECT_JAVASCRIPT,prepareFileUrl(INJECT_JAVASCRIPT,domainName));
+// universal injections
+injectInDocument(INJECT_CSS,prepareFileUrl(INJECT_CSS,"universal"));
+injectInDocument(INJECT_JAVASCRIPT,prepareFileUrl(INJECT_JAVASCRIPT,"universal"));

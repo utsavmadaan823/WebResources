@@ -1,7 +1,11 @@
 body{
-    padding-top: 25px!important;
+    padding-top: 15px!important;
 }
 
-.top-nav,.navbar,.footer-container,.footer{
+.top-nav,.navbar,.footer-container,.footer,#pop-tags,.modal-dialog.login-modal,div.well-filters + div > .col-lg-4,.pull-left.m-t-5,div.col-md-4 div.panel-default:last-child{
     display:none!important;
+}
+
+.vote-box *,#handle_subscription *{
+    pointer-events: none;
 }
